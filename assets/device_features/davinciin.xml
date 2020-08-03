@@ -25,7 +25,7 @@
     <!--whether the device is emulated sdcard-->
     <bool name="is_emulated_sdcard">true</bool>
     <!--whether the device has dual sd card-->
-    <bool name="support_dual_sd_card">true</bool>
+    <bool name="support_dual_sd_card">false</bool>
     <!--whether the device supports bt debug trace-->
     <bool name="btdebug_enabled">true</bool>
     <!--whether the device supports page layout-->
@@ -40,8 +40,6 @@
     <bool name="support_hd_record_param">false</bool>
     <!--whether the device supports screen paper mode-->
     <bool name="support_screen_paper_mode">true</bool>
-    <!--whether the device supports screenrecorder inner-sound recorder mode-->
-    <integer name="support_inner_record">0</integer>
     <!--whether the device supports button light-->
     <bool name="support_button_light">false</bool>
     <!--whether the device supports emulated storage-->
@@ -94,9 +92,9 @@
     <bool name="support_agps_paras">true</bool>
     <!--whether the device supports agps roaming-->
     <bool name="support_agps_roaming">false</bool>
-    <!-- Support Android Flashlight Controller -->
-    <bool name="support_android_flashlight">true</bool>
     <!--whether the device supports IR-->
+    <!-- Support Dual Gps-->
+    <bool name="support_dual_gps">false</bool>
     <bool name="support_ir">false</bool>
     <!-- whether the device supports app hiding-->
     <bool name="support_app_hiding">true</bool>
@@ -195,13 +193,9 @@
     <!-- whether support double tap to wake up device -->
     <bool name="support_gesture_wakeup">true</bool>
     <!-- whether support always on -->
-    <bool name="support_aod">false</bool>
+    <bool name="support_aod">true</bool>
     <!-- whether support edge handgrip -->
     <bool name="support_edge_handgrip">false</bool>
-    <!-- whether the device app permission detail show in provision-->
-    <bool name="support_provision_app_permission">true</bool>
-    <!--whether support pre-installed application-->
-    <bool name="support_pre_installed_application">true</bool>
     <!--wheater support validate device when syste upadte -->
     <bool name="support_ota_validate">true</bool>
     <!--whether show basic info items-->
@@ -258,7 +252,7 @@
     </string-array>
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
     <!-- finger for alipay. default do not need config. -->
-    <string name="finger_alipay_ifaa_model">Xiaomi-ginkgo</string>
+    <string name="finger_alipay_ifaa_model">Xiaomi-davinci</string>
     <!-- type of soter finger pay, config by owner of soter -->
     <integer name="type_soter_finger_pay">2</integer>
     <!-- finger record, config by owner -->
@@ -299,6 +293,7 @@
         <item>com.android.systemui</item>
         <item>com.phonetest.application</item>
         <item>com.phonetest.application.test</item>
+        <item>com.xiaomi.cameratools</item>
     </string-array>
     <!--still beautify value for 3rd party call-->
     <string name="extra_still_beautify_value">i:2</string>
@@ -333,7 +328,6 @@
         <item>com.xiaomi.midrop</item>
         <item>com.android.midrive</item>
         <item>com.xiaomi.drivemode</item>
-        <item>com.miui.smarttravel</item>
     </string-array>
     <!--system data-app path list -->
     <string-array name="system_data_path_list">
@@ -355,7 +349,6 @@
         <item>/system/data-app/MiDrop/MiDrop.apk</item>
         <item>/system/data-app/MiDrive/MiDrive.apk</item>
         <item>/system/data-app/MiuiDriveMode/MiuiDriveMode.apk</item>
-        <item>/system/data-app/SmartTravel/SmartTravel.apk</item>
     </string-array>
     <!--whether surpport paper mode animation-->
     <bool name="support_papermode_animation">true</bool>
@@ -363,8 +356,6 @@
     <bool name="is_compatible_paper_and_screen_effect">true</bool>
     <!--whether support optical zoom in camera-->
     <bool name="is_support_optical_zoom">true</bool>
-    <!-- whether support LDAC -->
-    <bool name="support_ldac">false</bool>
     <!--whether support portrait in camera-->
     <bool name="is_support_portrait">true</bool>
     <!--whether taking legacy face beauty in camera-->
@@ -388,36 +379,32 @@
     <!--whether camera support front flash-->
     <bool name="support_front_flash">true</bool>
     <!--whether support psensor in pocket mode (true by default)-->
-    <bool name="support_psensor_pocket_mode">true</bool>
+    <bool name="support_psensor_pocket_mode">false</bool>
     <!--whether camera support realtime manual exposure time-->
     <bool name="support_realtime_manual_exposure_time">true</bool>
     <!--whether sensor_has_latency-->
     <bool name="sensor_has_latency">true</bool>
     <!-- whether support touch gamemode -->
-    <bool name="support_touchfeature_gamemode">false</bool>
+    <bool name="support_touchfeature_gamemode">true</bool>
     <!-- whether support bluetooth fast startup -->
     <bool name="support_bluetooth_boost">true</bool>
     <string name="bluetooth_boost_value">0x000011C0</string>
     <!-- whether support ai task button -->
     <bool name="support_ai_task">false</bool>
+    <!-- whether support wlan low latency mode -->
+    <bool name="support_wifi_low_latency_mode">true</bool>
     <!-- whether support display gamemode -->
-    <bool name="support_displayfeature_gamemode">false</bool>
+    <bool name="support_displayfeature_gamemode">true</bool>
     <!-- whether support extreme mode only support perseus-->
     <bool name="support_extreme_battery_saver">false</bool>
     <!--These region support face unlock-->
     <string-array name="support_face_unlock_region_global">
         <item>ALL</item>
     </string-array>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_dom">
-        <item>CN</item>
-    </string-array>
     <!-- device head sar value -->
-    <float name="device_head_sar">0.255</float>
+    <float name="device_head_sar">1.070</float>
     <!-- device body sar value -->
-    <float name="device_body_sar">1.000</float>
-    <!-- whether support hangup while screen turnning off -->
-    <bool name="support_hangup_while_screen_off">true</bool>
+    <float name="device_body_sar">0.723</float>
     <!-- whether this device is Android one -->
     <bool name="is_android_one_device">true</bool>
     <!-- whether camera supports paralell process -->

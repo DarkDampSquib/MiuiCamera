@@ -2535,12 +2535,14 @@
     <public type="plurals" name="toast_burst_snap_finished_summary" id="0x7f0d0001" />
     <public type="raw" name="backdropper" id="0x7f0e0000" />
     <public type="raw" name="blank" id="0x7f0e0001" />
-    <public type="raw" name="feature_laurel_sprout" id="0x7f0e0002" />
     <public type="raw" name="goofy_face" id="0x7f0e0003" />
     <public type="raw" name="watermark" id="0x7f0e0004" />
     <public type="raw" name="xiaomi_static_config" id="0x7f0e0005" />
-    <public type="raw" name="feature_ginkgo" id="0x7f0e0006" />
-    <public type="raw" name="feature_willow" id="0x7f0e0007" />
+    <public type="raw" name="feature_cepheus" id="0x7f0e0006" />
+    <public type="raw" name="feature_davinci" id="0x7f0e0007" />
+    <public type="raw" name="feature_davinciin" id="0x7f0e0008" />
+    <public type="raw" name="feature_raphael" id="0x7f0e0009" />
+    <public type="raw" name="feature_raphaelin" id="0x7f0e0010" />
     <public type="string" name="access_sd_fail" id="0x7f0f0000" />
     <public type="string" name="accessibility_ai_scene_off" id="0x7f0f0001" />
     <public type="string" name="accessibility_ai_scene_on" id="0x7f0f0002" />
